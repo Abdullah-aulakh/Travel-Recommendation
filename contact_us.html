@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Travel Recommendation</title>
+  <link rel="stylesheet" href="travel_recommendation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <nav>
+    <div class="left">
+      <h3>Travel Recommendation</h3>
+    </div>
+    <div class="middle">
+      <a href="travel_recommendation.html">Home</a>
+      <a href="about_us.html">About Us</a>
+      <a href="contact_us.html" class="active">Contact Us</a>
+    </div>
+    <div class="right">
+      <input type="text" placeholder="Enter a Destination or keyword" id="searchInput">
+      <div class="btns">
+        <button id="searchBtn">Search</button>
+        <button id="clearBtn">Clear</button>
+        <div id="resultsContainer">
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="content-left">
+      <div class="line"></div>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+
+    <div class="content-right">
+      <div class="heading">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="sub-heading">
+        <p>We’d love to hear from you! Whether you have a question, suggestion, or feedback about our travel recommendations, feel free to reach out using the form below.</p>
+      </div>
+
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
